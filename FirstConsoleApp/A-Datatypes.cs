@@ -18,7 +18,5 @@ class Datatypes
         char initial = 'D';
         string name = "Sumina shrestha";
 
-        DateTime date = DateTime.Now;
-        Console.WriteLine(date);
     }
 }
