@@ -1,10 +1,9 @@
 using System;
+using System.Linq; //namespace lai import gareko which gives max min 
 class Methods
 {
-    void Greet()
-    {
-Console.WriteLine("Hey, there!");
-    }
+   public void Greet() => Console.WriteLine()("Hey, there!"); // arrow function
+   
     public void Greet(string greeting)
     {
         Console.WriteLine($"{greeting}, there!"); //string interpolation
@@ -19,7 +18,18 @@ Console.WriteLine("Hey, there!");
 
 
     }
+    //variable number of arguments
     
+public double GetMax( params double[] numbers) //=> numbers.Max();arrow function
+{
+    return numbers.Max();
 
+}
+public (int, int) GetMinMax(params int[] numbers)
+{
+    var smallest = numbers.Min();
+    var highest = numbers.Max();
+    return (smallest, highest);
+}
     
 }
